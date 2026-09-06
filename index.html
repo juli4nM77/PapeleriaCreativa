@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antonella Papelería Creativa</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <img src="img/Logos/Logo Antonella creativa.jpeg" alt="Logo Antonella Papelería Creativa" class="brand__logo">
+        <div>
+          <span class="brand__eyebrow">Antonella</span>
+          <div class="brand__title-row">
+            <strong class="brand__name">Papelería Creativa</strong>
+            <a href="https://www.instagram.com/antonella.papeleriacreativa/" target="_blank" rel="noopener" class="button button--social">
+              <img src="img/Logos/images.png" alt="Instagram" class="button__icon">
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="cart-toggle" id="cartToggle" aria-label="Abrir carrito">
+        <span>Carrito</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </header>
+
+    <button class="cart-toggle cart-toggle--floating" id="floatingCartToggle" aria-label="Abrir carrito">
+      <span>Carrito</span>
+      <span class="cart-count" id="floatingCartCount">0</span>
+    </button>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Diseño único para tus proyectos </p>
+          <h1>Antonella Papelería Creativa</h1>
+          <p class="hero__text">Color, estilo y productos especiales con envío directo por Dac a todo el país.</p>
+          <p class="hero__text">Nos encontramos en el departamento de Maldonado, Uruguay.</p>
+          <div class="hero__actions">
+            <a href="#productos" class="button button--primary">Ver productos</a>
+            <a href="https://api.whatsapp.com/send?phone=59895366807&text=Hola%20Antonella,%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" class="button button--whatsapp hero__whatsapp">
+              <img src="img/Logos/images.jpg" alt="WhatsApp" class="button__icon">
+              Enviar WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="productos" id="productos">
+        <div class="section-header">
+          <span class="section-label">Nuestros Productos</span>
+          <h2>Productos creativos y a medida</h2>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="beneficios">
+        <div class="beneficio">
+          <h3>Compra fácil</h3>
+          <p>Agrega al carrito y envía tu pedido por WhatsApp con un solo clic.</p>
+        </div>
+        <div class="beneficio">
+          <h3>Estilo premium</h3>
+          <p>Productos decorativos con una estética delicada y moderna.</p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <p class="cart-title">Tu carrito</p>
+          <span class="cart-subtitle">Revisa tus selecciones antes de comprar</span>
+        </div>
+        <button class="cart-close" id="cartClose" aria-label="Cerrar carrito">✕</button>
+      </div>
+      <div class="cart-body" id="cartItems">
+        <p class="cart-empty">Tu carrito está vacío. Agrega productos para continuar.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cartTotal">$0</strong>
+        </div>
+        <a href="#" target="_blank" rel="noopener" class="button button--whatsapp" id="checkoutButton">Comprar por WhatsApp</a>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <a href="https://api.whatsapp.com/send?phone=59895366807&text=Hola%20Antonella,%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" class="button button--whatsapp footer-button">Enviar mensaje a WhatsApp</a>
+      <a href="https://www.instagram.com/antonella.papeleriacreativa/" target="_blank" rel="noopener" class="button button--instagram footer-button">
+        <img src="img/Logos/images.png" alt="Instagram" class="button__icon">
+        Instagram
+      </a>
+      <div class="footer-contact">
+        <img src="img/Logos/images.jpg" alt="WhatsApp" class="footer-logo">
+        <p>Envía tu pedido directo a WhatsApp y recibe atención personalizada.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
